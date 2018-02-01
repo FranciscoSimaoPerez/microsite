@@ -6,3 +6,14 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+function loadContent() {
+    $(function (){
+        $('#content').load("home.html");
+    });
+
+    function loadContent(){
+        $(document).ready(function(){
+            $('#content').load("home.html");
+        });
+    }
+}

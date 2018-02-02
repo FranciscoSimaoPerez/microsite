@@ -8,13 +8,34 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="javascript.js"></script>
-    <script>
-        $(function(){  
-            $('#content').load("home.html");  
-        });
-
     
+
+    <script>
+        $(document).ready(function() {
+            $('#content').load('home.html');
+            $('#home').click(function(event) {
+                event.preventDefault();
+                $("#content").load("home.html");        
+            });
+            $('#about').click(function(event) {
+                event.preventDefault();
+                $("#content").load("about.html");        
+            });
+            $('#gallery').click(function(event) {
+                event.preventDefault();
+                $("#content").load("gallery.html");        
+            });
+            $('#services').click(function(event) {
+                event.preventDefault();
+                $("#content").load("services.html");        
+            });
+            $('#contacts').click(function(event) {
+                event.preventDefault();
+                $("#content").load("contacts.html");        
+            });
+        });
     </script>
+
     <title>ACiN - Página Inicial</title>
 </head>
 <body>
@@ -24,11 +45,11 @@
         </a>
     </div>
     <div class="topnav" id="myTopnav">
-        <a href="loadContent(page)" class="active">Página Inicial</a>
-        <a href="#contact">Sobre Nós</a>
-        <a href="#gallery">Galeria</a>
-        <a href="#about">Serviços</a>
-        <a href="#about">Contatos</a>
+        <a id="home" href="loadContent(page)" class="active">Página Inicial</a>
+        <a id="about" href="#about">Sobre Nós</a>
+        <a id="gallery"href="#gallery">Galeria</a>
+        <a id="services"href="#services">Serviços</a>
+        <a id="contact" href="#contact">Contatos</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <div class="banner">

@@ -56,7 +56,6 @@ body {
 
 .video{
     width: 100%;
-    
 }
 
 .overlay {
@@ -148,4 +147,7 @@ body {
         display: none;
     }
     
+    .title{
+        display: none;
+    }
 }

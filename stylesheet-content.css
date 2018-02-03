@@ -17,6 +17,32 @@ body{
 
 }
 
+.image{
+  height: 25%;
+  width: auto;
+  margin: 10px;
+}
+
+.content-services{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  max-height: 200px;
+}
+
+.service-container{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(54, 105, 163);
+    border-radius: 2px;
+    height:100%;
+}
+
 .coluna1{
     width: 70%;
 }

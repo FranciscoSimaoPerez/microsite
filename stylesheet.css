@@ -13,6 +13,15 @@ body {
     width:100%;
 }
 
+.slogan{
+    margin:10px;
+    text-align: center;
+    background-color: rgb(54, 105, 163);
+    color: aliceblue;
+    width: 100%;
+    padding: 5px;
+}
+
 .container-fluid{
     display: flex;
     flex-flow: column;
@@ -30,6 +39,7 @@ body {
 
 .logo img{
     width:35%;
+    height: 20%;
 }
 
 .logo-mobile{
@@ -98,7 +108,7 @@ body {
 }
 
 .active {
-    background-color: rgb(33, 89, 163);
+    background-color: rgb(54, 105, 163);
     color: white;
 }
 
